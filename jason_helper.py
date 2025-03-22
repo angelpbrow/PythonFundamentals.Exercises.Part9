@@ -1,8 +1,8 @@
 import json
 
-def read_json():
-    f = open('mario.json')
-    data = json.load(f)
+def read_json(file_path):
+    with open(file_path, 'r') as f:
+        data = json.load(f)
     return data
 
 def read_all_json_files():
